@@ -5,7 +5,7 @@
   )
 end
 
-put "10 blog posts created"
+puts "10 blog posts created"
 
 
 5.times do | skill |
@@ -15,10 +15,20 @@ put "10 blog posts created"
   )
 end
 
-put "5 skills created"
 
+puts "5 skills created"
 
-put "9 portfolio items created"
+9.times do | portfolio_item |
+  MyPortfolio.create!(
+    title: "Portfolio title #{portfolio_item}",
+    subtitle: "My service",
+    body: "Bacon ipsum dolor amet boudin hamburger tongue tenderloin picanha porchetta frankfurter corned beef tri-tip pork loin swine drumstick. Pastrami pork chop leberkas, shank flank sirloin ground round pork shankle meatball. Hamburger corned beef flank, ball tip strip steak pig salami brisket kevin andouille tenderloin.",
+    main_image: "http://placehold.it/600x400",
+    thumb_image: "http://placehold.it/350x200",
+  )
+end
+
+puts "9 portfolio items created"
 
 
 
